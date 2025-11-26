@@ -1,0 +1,218 @@
+year: 2023
+lumi: 18.063
+lumiunit: fb
+genweight: "1."
+treename: Events
+analysisname: Trota_TopSF_2023
+processes:
+  data:
+    nominal_files:
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC1_0_2023/DataJetMETC1_0_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC1_1_2023/DataJetMETC1_1_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC2_0_2023/DataJetMETC2_0_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC2_1_2023/DataJetMETC2_1_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC3_0_2023/DataJetMETC3_0_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC3_1_2023/DataJetMETC3_1_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC4_0_2023/DataJetMETC4_0_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC4_1_2023/DataJetMETC4_1_2023_nominal.root
+  qcd:
+    nominal_files:
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023/QCD_HT70to100_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023/QCD_HT100to200_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023/QCD_HT200to400_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023/QCD_HT400to600_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023/QCD_HT600to800_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023/QCD_HT800to1000_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023/QCD_HT1000to1200_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023/QCD_HT1200to1500_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023/QCD_HT1500to2000_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023/QCD_HT2000_2023_nominal.root
+    unc_files:
+      JES:
+        up:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023/QCD_HT70to100_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023/QCD_HT100to200_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023/QCD_HT200to400_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023/QCD_HT400to600_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023/QCD_HT600to800_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023/QCD_HT800to1000_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023/QCD_HT1000to1200_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023/QCD_HT1200to1500_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023/QCD_HT1500to2000_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023/QCD_HT2000_2023_jesUp.root
+        down:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023/QCD_HT70to100_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023/QCD_HT100to200_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023/QCD_HT200to400_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023/QCD_HT400to600_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023/QCD_HT600to800_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023/QCD_HT800to1000_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023/QCD_HT1000to1200_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023/QCD_HT1200to1500_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023/QCD_HT1500to2000_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023/QCD_HT2000_2023_jesDown.root
+      JER:
+        up:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023/QCD_HT70to100_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023/QCD_HT100to200_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023/QCD_HT200to400_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023/QCD_HT400to600_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023/QCD_HT600to800_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023/QCD_HT800to1000_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023/QCD_HT1000to1200_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023/QCD_HT1200to1500_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023/QCD_HT1500to2000_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023/QCD_HT2000_2023_jerUp.root
+        down:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023/QCD_HT70to100_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023/QCD_HT100to200_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023/QCD_HT200to400_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023/QCD_HT400to600_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023/QCD_HT600to800_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023/QCD_HT800to1000_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023/QCD_HT1000to1200_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023/QCD_HT1200to1500_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023/QCD_HT1500to2000_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023/QCD_HT2000_2023_jerDown.root
+  ttbar:
+    nominal_files:
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023/TT_semilep_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023/TT_hadr_2023_nominal.root
+    unc_files:
+      JES:
+        up:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023/TT_semilep_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023/TT_hadr_2023_jesUp.root
+        down:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023/TT_semilep_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023/TT_hadr_2023_jesDown.root
+      JER:
+        up:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023/TT_semilep_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023/TT_hadr_2023_jerUp.root
+        down:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023/TT_semilep_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023/TT_hadr_2023_jerDown.root
+  wjets:
+    nominal_files:
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023/WJets_2jets0J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023/WJets_2jets1J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023/WJets_2jets2J_2023_nominal.root
+    unc_files:
+      JES:
+        up:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023/WJets_2jets0J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023/WJets_2jets1J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023/WJets_2jets2J_2023_jesUp.root
+        down:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023/WJets_2jets0J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023/WJets_2jets1J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023/WJets_2jets2J_2023_jesDown.root
+      JER:
+        up:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023/WJets_2jets0J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023/WJets_2jets1J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023/WJets_2jets2J_2023_jerUp.root
+        down:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023/WJets_2jets0J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023/WJets_2jets1J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023/WJets_2jets2J_2023_jerDown.root
+  zjets:
+    nominal_files:
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023/ZJetsToNuNu_2jets_PT40to100_1J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023/ZJetsToNuNu_2jets_PT40to100_2J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023/ZJetsToNuNu_2jets_PT100to200_1J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023/ZJetsToNuNu_2jets_PT100to200_2J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023/ZJetsToNuNu_2jets_PT200to400_1J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023/ZJetsToNuNu_2jets_PT200to400_2J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023/ZJetsToNuNu_2jets_PT400to600_1J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023/ZJetsToNuNu_2jets_PT400to600_2J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023/ZJetsToNuNu_2jets_PT600_1J_2023_nominal.root
+      - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023/ZJetsToNuNu_2jets_PT600_2J_2023_nominal.root
+    unc_files:
+      JES:
+        up:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023/ZJetsToNuNu_2jets_PT40to100_1J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023/ZJetsToNuNu_2jets_PT40to100_2J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023/ZJetsToNuNu_2jets_PT100to200_1J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023/ZJetsToNuNu_2jets_PT100to200_2J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023/ZJetsToNuNu_2jets_PT200to400_1J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023/ZJetsToNuNu_2jets_PT200to400_2J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023/ZJetsToNuNu_2jets_PT400to600_1J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023/ZJetsToNuNu_2jets_PT400to600_2J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023/ZJetsToNuNu_2jets_PT600_1J_2023_jesUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023/ZJetsToNuNu_2jets_PT600_2J_2023_jesUp.root
+        down:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023/ZJetsToNuNu_2jets_PT40to100_1J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023/ZJetsToNuNu_2jets_PT40to100_2J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023/ZJetsToNuNu_2jets_PT100to200_1J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023/ZJetsToNuNu_2jets_PT100to200_2J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023/ZJetsToNuNu_2jets_PT200to400_1J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023/ZJetsToNuNu_2jets_PT200to400_2J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023/ZJetsToNuNu_2jets_PT400to600_1J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023/ZJetsToNuNu_2jets_PT400to600_2J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023/ZJetsToNuNu_2jets_PT600_1J_2023_jesDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023/ZJetsToNuNu_2jets_PT600_2J_2023_jesDown.root
+      JER:
+        up:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023/ZJetsToNuNu_2jets_PT40to100_1J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023/ZJetsToNuNu_2jets_PT40to100_2J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023/ZJetsToNuNu_2jets_PT100to200_1J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023/ZJetsToNuNu_2jets_PT100to200_2J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023/ZJetsToNuNu_2jets_PT200to400_1J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023/ZJetsToNuNu_2jets_PT200to400_2J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023/ZJetsToNuNu_2jets_PT400to600_1J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023/ZJetsToNuNu_2jets_PT400to600_2J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023/ZJetsToNuNu_2jets_PT600_1J_2023_jerUp.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023/ZJetsToNuNu_2jets_PT600_2J_2023_jerUp.root
+        down:
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023/ZJetsToNuNu_2jets_PT40to100_1J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023/ZJetsToNuNu_2jets_PT40to100_2J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023/ZJetsToNuNu_2jets_PT100to200_1J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023/ZJetsToNuNu_2jets_PT100to200_2J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023/ZJetsToNuNu_2jets_PT200to400_1J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023/ZJetsToNuNu_2jets_PT200to400_2J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023/ZJetsToNuNu_2jets_PT400to600_1J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023/ZJetsToNuNu_2jets_PT400to600_2J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023/ZJetsToNuNu_2jets_PT600_1J_2023_jerDown.root
+          - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023/ZJetsToNuNu_2jets_PT600_2J_2023_jerDown.root
+basecut: "1."
+categories:
+  topmatched:
+    processes:
+      - ttbar
+    cut: "TopMixedMatched_to_GenTop_dR0p2"
+  nonmatched:
+    processes:
+      - ttbar
+    cut: "!(TopMixedMatched_to_GenTop_dR0p2)"
+  other:
+    processes:
+      - qcd
+      - wjets
+      - zjets
+    cut: "1.0"
+tagger:
+  name: BestTopMixed_TightWP
+  varname: BestTopMixed_score
+  cut: 0.7214655876159668
+distribution:
+  variables:
+    - variable: BestTopMixed_mass
+      range: [0, 1000]
+      bins: 20
+  event_categories:
+    - name: pt300to400
+      rule: "(BestTopMixed_pt>=300) && (BestTopMixed_pt<400)"
+uncertainties:
+  lumi:
+    mode: "lnN"
+    size: 1.025
+  pu:
+    mode: "factor"
+    up: "puWeightUp/puWeight"
+    down: "puWeightDown/puWeight"
+  JES:
+    mode: "file"
+  JER:
+    mode: "file"

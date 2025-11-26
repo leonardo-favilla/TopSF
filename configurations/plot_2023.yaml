@@ -1,0 +1,20 @@
+lumi: 18.063
+xlabel: "Best TopMixed Mass (GeV)"
+savedir: "Trota_TopSF_2023"
+com: 13.6
+categories:
+  topmatched:
+    color: "#e42536"
+    propername: "Top-matched"
+  nonmatched:
+    color: "#5790fc"
+    propername: "Non-matched"
+  other:
+    color: "#964a8b"
+    propername: "Other"
+eventcats:
+  - name: pt300to400
+    variable: BestTopMixed_mass
+    propername: "$p_T \\in [300, 400]$"
+    prefitfile: Trota_TopSF_2023/BestTopMixed_mass/pt300to400.root
+    postfitfile: Trota_TopSF_2023/BestTopMixed_mass/fitDiagnostics_pt300to400.root
