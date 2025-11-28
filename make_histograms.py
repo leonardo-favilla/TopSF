@@ -76,7 +76,8 @@ class AnalysisHistogram(object):
                                 self.unc_hist[category][unc][unctype][passing].SetBinError(i, 0.01)
 
 def extract_histogram(filename, treename, var, cut, weight, histname, xbins, xmin, xmax):
-    fileobj = pyr.TFile(filename, "READ")
+    # fileobj = pyr.TFile(filename, "READ")     # this reads only local/eos files
+    fileobj = pyr.TFile.Open(filename)          # to read files both on local/eos and on tier
     treeobj = fileobj.Get(treename)
     hist = pyr.TH1F(histname, histname, xbins, xmin, xmax)
     if args.debug: print(f"({cut})*({weight})")
