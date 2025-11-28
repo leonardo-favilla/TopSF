@@ -1,7 +1,7 @@
 year: 2023
 lumi: 18.063
 lumiunit: fb
-genweight: "1."
+genweight: "nloewcorrection*puWeight*SFbtag*(LHEWeight_originalXWGTUP/abs(LHEWeight_originalXWGTUP))"
 treename: Events
 analysisname: Trota_TopSF_2023
 processes:
@@ -176,7 +176,7 @@ processes:
           - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023/ZJetsToNuNu_2jets_PT400to600_2J_2023_jerDown.root
           - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023/ZJetsToNuNu_2jets_PT600_1J_2023_jerDown.root
           - /eos/user/l/lfavilla/RDF_DManalysis/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023/ZJetsToNuNu_2jets_PT600_2J_2023_jerDown.root
-basecut: "1."
+basecut: "(HLT_PFMET120_PFMHT120_IDTight || HLT_PFMETNoMu120_PFMHTNoMu120_IDTight || HLT_Mu50 || HLT_IsoMu24 || HLT_HighPtTkMu100) && nTopLep==1 && W_pt > 150"
 categories:
   topmatched:
     processes:
