@@ -17,4 +17,4 @@ eventcats:
     variable: BestTopMixed_mass
     propername: "$p_T \\in [300, 400]$"
     prefitfile: Trota_TopSF_2022/BestTopMixed_mass/pt300to400.root
-    postfitfile: Trota_TopSF_2022/BestTopMixed_mass/fitDiagnosticsTest_pt300to400.root
+    postfitfile: Trota_TopSF_2022/BestTopMixed_mass/fitDiagnostics_pt300to400.root
