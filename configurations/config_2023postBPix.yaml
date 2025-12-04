@@ -1,0 +1,274 @@
+year: 2023postBPix
+lumi: 9.693
+lumiunit: fb
+genweight: "xsecWeight/ntotEvents*nloewcorrection*puWeight*SFbtag*(LHEWeight_originalXWGTUP/abs(LHEWeight_originalXWGTUP))"
+# genweight: "1."
+treename: Events
+analysisname: Trota_TopSF_2023postBPix
+processes:
+  data:
+    nominal_files:
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC1_0_2023postBPix/DataJetMETC1_0_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC1_1_2023postBPix/DataJetMETC1_1_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC2_0_2023postBPix/DataJetMETC2_0_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC2_1_2023postBPix/DataJetMETC2_1_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC3_0_2023postBPix/DataJetMETC3_0_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC3_1_2023postBPix/DataJetMETC3_1_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC4_0_2023postBPix/DataJetMETC4_0_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/DataJetMETC4_1_2023postBPix/DataJetMETC4_1_2023postBPix_nominal.root
+  qcd:
+    nominal_files:
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023postBPix/QCD_HT70to100_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023postBPix/QCD_HT100to200_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023postBPix/QCD_HT200to400_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023postBPix/QCD_HT400to600_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023postBPix/QCD_HT600to800_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023postBPix/QCD_HT800to1000_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023postBPix/QCD_HT1000to1200_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023postBPix/QCD_HT1200to1500_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023postBPix/QCD_HT1500to2000_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023postBPix/QCD_HT2000_2023postBPix_nominal.root
+    unc_files:
+      JES:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023postBPix/QCD_HT70to100_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023postBPix/QCD_HT100to200_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023postBPix/QCD_HT200to400_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023postBPix/QCD_HT400to600_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023postBPix/QCD_HT600to800_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023postBPix/QCD_HT800to1000_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023postBPix/QCD_HT1000to1200_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023postBPix/QCD_HT1200to1500_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023postBPix/QCD_HT1500to2000_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023postBPix/QCD_HT2000_2023postBPix_jesUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023postBPix/QCD_HT70to100_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023postBPix/QCD_HT100to200_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023postBPix/QCD_HT200to400_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023postBPix/QCD_HT400to600_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023postBPix/QCD_HT600to800_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023postBPix/QCD_HT800to1000_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023postBPix/QCD_HT1000to1200_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023postBPix/QCD_HT1200to1500_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023postBPix/QCD_HT1500to2000_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023postBPix/QCD_HT2000_2023postBPix_jesDown.root
+      JER:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023postBPix/QCD_HT70to100_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023postBPix/QCD_HT100to200_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023postBPix/QCD_HT200to400_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023postBPix/QCD_HT400to600_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023postBPix/QCD_HT600to800_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023postBPix/QCD_HT800to1000_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023postBPix/QCD_HT1000to1200_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023postBPix/QCD_HT1200to1500_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023postBPix/QCD_HT1500to2000_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023postBPix/QCD_HT2000_2023postBPix_jerUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT70to100_2023postBPix/QCD_HT70to100_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT100to200_2023postBPix/QCD_HT100to200_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT200to400_2023postBPix/QCD_HT200to400_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT400to600_2023postBPix/QCD_HT400to600_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT600to800_2023postBPix/QCD_HT600to800_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT800to1000_2023postBPix/QCD_HT800to1000_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1000to1200_2023postBPix/QCD_HT1000to1200_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1200to1500_2023postBPix/QCD_HT1200to1500_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT1500to2000_2023postBPix/QCD_HT1500to2000_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/QCD_HT2000_2023postBPix/QCD_HT2000_2023postBPix_jerDown.root
+  ttbar:
+    nominal_files:
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023postBPix/TT_semilep_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023postBPix/TT_hadr_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_dilep_2023postBPix/TT_dilep_2023postBPix_nominal.root
+    unc_files:
+      JES:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023postBPix/TT_semilep_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023postBPix/TT_hadr_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_dilep_2023postBPix/TT_dilep_2023postBPix_jesUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023postBPix/TT_semilep_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023postBPix/TT_hadr_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_dilep_2023postBPix/TT_dilep_2023postBPix_jesDown.root
+      JER:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023postBPix/TT_semilep_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023postBPix/TT_hadr_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_dilep_2023postBPix/TT_dilep_2023postBPix_jerUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_semilep_2023postBPix/TT_semilep_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_hadr_2023postBPix/TT_hadr_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TT_dilep_2023postBPix/TT_dilep_2023postBPix_jerDown.root
+  tw:
+    nominal_files:
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminustoLNu2Q_2023postBPix/TWminustoLNu2Q_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto4Q_2023postBPix/TWminusto4Q_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto2L2Nu_2023postBPix/TWminusto2L2Nu_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplustoLNu2Q_2023postBPix/TbarWplustoLNu2Q_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto4Q_2023postBPix/TbarWplusto4Q_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto2L2Nu_2023postBPix/TbarWplusto2L2Nu_2023postBPix_nominal.root
+    unc_files:
+      JES:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminustoLNu2Q_2023postBPix/TWminustoLNu2Q_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto4Q_2023postBPix/TWminusto4Q_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto2L2Nu_2023postBPix/TWminusto2L2Nu_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplustoLNu2Q_2023postBPix/TbarWplustoLNu2Q_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto4Q_2023postBPix/TbarWplusto4Q_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto2L2Nu_2023postBPix/TbarWplusto2L2Nu_2023postBPix_jesUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminustoLNu2Q_2023postBPix/TWminustoLNu2Q_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto4Q_2023postBPix/TWminusto4Q_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto2L2Nu_2023postBPix/TWminusto2L2Nu_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplustoLNu2Q_2023postBPix/TbarWplustoLNu2Q_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto4Q_2023postBPix/TbarWplusto4Q_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto2L2Nu_2023postBPix/TbarWplusto2L2Nu_2023postBPix_jesDown.root
+      JER:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminustoLNu2Q_2023postBPix/TWminustoLNu2Q_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto4Q_2023postBPix/TWminusto4Q_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto2L2Nu_2023postBPix/TWminusto2L2Nu_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplustoLNu2Q_2023postBPix/TbarWplustoLNu2Q_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto4Q_2023postBPix/TbarWplusto4Q_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto2L2Nu_2023postBPix/TbarWplusto2L2Nu_2023postBPix_jerUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminustoLNu2Q_2023postBPix/TWminustoLNu2Q_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto4Q_2023postBPix/TWminusto4Q_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TWminusto2L2Nu_2023postBPix/TWminusto2L2Nu_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplustoLNu2Q_2023postBPix/TbarWplustoLNu2Q_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto4Q_2023postBPix/TbarWplusto4Q_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/TbarWplusto2L2Nu_2023postBPix/TbarWplusto2L2Nu_2023postBPix_jerDown.root
+  wjets:
+    nominal_files:
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023postBPix/WJets_2jets0J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023postBPix/WJets_2jets1J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023postBPix/WJets_2jets2J_2023postBPix_nominal.root
+    unc_files:
+      JES:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023postBPix/WJets_2jets0J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023postBPix/WJets_2jets1J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023postBPix/WJets_2jets2J_2023postBPix_jesUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023postBPix/WJets_2jets0J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023postBPix/WJets_2jets1J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023postBPix/WJets_2jets2J_2023postBPix_jesDown.root
+      JER:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023postBPix/WJets_2jets0J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023postBPix/WJets_2jets1J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023postBPix/WJets_2jets2J_2023postBPix_jerUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets0J_2023postBPix/WJets_2jets0J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets1J_2023postBPix/WJets_2jets1J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/WJets_2jets2J_2023postBPix/WJets_2jets2J_2023postBPix_jerDown.root
+  zjets:
+    nominal_files:
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023postBPix/ZJetsToNuNu_2jets_PT600_1J_2023postBPix_nominal.root
+      - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023postBPix/ZJetsToNuNu_2jets_PT600_2J_2023postBPix_nominal.root
+    unc_files:
+      JES:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023postBPix/ZJetsToNuNu_2jets_PT600_1J_2023postBPix_jesUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023postBPix/ZJetsToNuNu_2jets_PT600_2J_2023postBPix_jesUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023postBPix/ZJetsToNuNu_2jets_PT600_1J_2023postBPix_jesDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023postBPix/ZJetsToNuNu_2jets_PT600_2J_2023postBPix_jesDown.root
+      JER:
+        up:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023postBPix/ZJetsToNuNu_2jets_PT600_1J_2023postBPix_jerUp.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023postBPix/ZJetsToNuNu_2jets_PT600_2J_2023postBPix_jerUp.root
+        down:
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_1J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix/ZJetsToNuNu_2jets_PT40to100_2J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_1J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix/ZJetsToNuNu_2jets_PT100to200_2J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_1J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix/ZJetsToNuNu_2jets_PT200to400_2J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_1J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix/ZJetsToNuNu_2jets_PT400to600_2J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_1J_2023postBPix/ZJetsToNuNu_2jets_PT600_1J_2023postBPix_jerDown.root
+          - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework/ZJetsToNuNu_2jets_PT600_2J_2023postBPix/ZJetsToNuNu_2jets_PT600_2J_2023postBPix_jerDown.root
+basecut: "(HLT_PFMET120_PFMHT120_IDTight || HLT_PFMETNoMu120_PFMHTNoMu120_IDTight || HLT_Mu50 || HLT_IsoMu24 || HLT_HighPtTkMu100) && nTopLep==1 && W_pt > 150 && MET_pt>50"
+# basecut: "1."
+categories:
+  topmatched:
+    processes:
+      - ttbar
+      - tw
+    cut: "TopMixedMatched_to_GenTop_dR0p2"
+  nonmatched:
+    processes:
+      - ttbar
+      - tw
+    cut: "!(TopMixedMatched_to_GenTop_dR0p2)"
+  other:
+    processes:
+      - qcd
+      - wjets
+      - zjets
+    cut: "1.0"
+tagger:
+  name: BestTopMixed_TightWP
+  varname: BestTopMixed_score
+  cut: 0.7214655876159668
+distribution:
+  variables:
+    - variable: BestTopMixed_mass
+      range: [0, 1000]
+      bins: 20
+  event_categories:
+    - name: pt0to200
+      rule: "(BestTopMixed_pt>=0) && (BestTopMixed_pt<200)"
+    - name: pt200to400
+      rule: "(BestTopMixed_pt>=200) && (BestTopMixed_pt<400)"
+    - name: pt400to600
+      rule: "(BestTopMixed_pt>=400) && (BestTopMixed_pt<600)"
+    - name: pt600to800
+      rule: "(BestTopMixed_pt>=600) && (BestTopMixed_pt<800)"
+    - name: pt800to1000
+      rule: "(BestTopMixed_pt>=800) && (BestTopMixed_pt<1000)"
+uncertainties:
+  lumi:
+    mode: "lnN"
+    size: 1.025
+  pu:
+    mode: "factor"
+    up: "puWeightUp/puWeight"
+    down: "puWeightDown/puWeight"
+  JES:
+    mode: "file"
+  JER:
+    mode: "file"

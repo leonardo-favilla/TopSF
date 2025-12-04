@@ -1,6 +1,6 @@
-lumi: 7.980
+lumi: 9.693
 xlabel: "Best TopMixed Mass (GeV)"
-savedir: "Trota_TopSF_2022"
+savedir: "Trota_TopSF_2023postBPix"
 com: 13.6
 categories:
   topmatched:
@@ -16,5 +16,5 @@ eventcats:
   - name: pt400to600
     variable: BestTopMixed_mass
     propername: "$p_T \\in [400, 600]$"
-    prefitfile: Trota_TopSF_2022/BestTopMixed_mass/pt400to600.root
-    postfitfile: Trota_TopSF_2022/BestTopMixed_mass/fitDiagnostics_pt400to600.root
+    prefitfile: Trota_TopSF_2023postBPix/BestTopMixed_mass/pt400to600.root
+    postfitfile: Trota_TopSF_2023postBPix/BestTopMixed_mass/fitDiagnostics_pt400to600.root
