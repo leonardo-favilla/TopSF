@@ -2,9 +2,8 @@ year: 2023
 lumi: 18.063
 lumiunit: fb
 genweight: "xsecWeight/ntotEvents*nloewcorrection*puWeight*SFbtag*(LHEWeight_originalXWGTUP/abs(LHEWeight_originalXWGTUP))"
-# genweight: "1."
 treename: Events
-analysisname: Trota_TopSF_2023
+analysisname: Trota_TopSF_2023_Merged_LooseWP
 processes:
   data:
     nominal_files:
@@ -384,44 +383,41 @@ processes:
           - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework_minimal/ZJetsToNuNu_2jets_PT400to600_2J_2023/ZJetsToNuNu_2jets_PT400to600_2J_2023_jerDown_0.root
           - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework_minimal/ZJetsToNuNu_2jets_PT600_2J_2023/ZJetsToNuNu_2jets_PT600_2J_2023_jerDown_0.root
 basecut: "W_pt>150 && MET_pt>50"
-# basecut: "1."
 categories:
   topmatched:
     processes:
       - ttbar
       - tw
-    cut: "TopMixedMatched_to_GenTop_dR0p2"
+    cut: "TopMergedMatched_to_GenTop_dR0p2"
   nonmatched:
     processes:
       - ttbar
       - tw
-    cut: "!(TopMixedMatched_to_GenTop_dR0p2)"
+    cut: "!(TopMergedMatched_to_GenTop_dR0p2)"
   other:
     processes:
       - qcd
       - wjets
       - zjets
-    cut: "1.0"
+    cut: "!(TopMergedMatched_to_GenTop_dR0p2)"
 tagger:
-  name: BestTopMixed_TightWP
-  varname: BestTopMixed_score
-  cut: 0.7214655876159668
+  name: BestTopMerged_LooseWP
+  varname: BestTopMerged_score
+  cut: 0.8
 distribution:
   variables:
-    - variable: BestTopMixed_mass
+    - variable: BestTopMerged_mass
       range: [0, 1000]
       bins: 20
   event_categories:
     - name: pt0to200
-      rule: "(BestTopMixed_pt>=0) && (BestTopMixed_pt<200)"
+      rule: "(BestTopMerged_pt>=0) && (BestTopMerged_pt<200)"
     - name: pt200to400
-      rule: "(BestTopMixed_pt>=200) && (BestTopMixed_pt<400)"
+      rule: "(BestTopMerged_pt>=200) && (BestTopMerged_pt<400)"
     - name: pt400to600
-      rule: "(BestTopMixed_pt>=400) && (BestTopMixed_pt<600)"
-    - name: pt600to800
-      rule: "(BestTopMixed_pt>=600) && (BestTopMixed_pt<800)"
-    - name: pt800to1000
-      rule: "(BestTopMixed_pt>=800) && (BestTopMixed_pt<1000)"
+      rule: "(BestTopMerged_pt>=400) && (BestTopMerged_pt<600)"
+    - name: pt600to1000
+      rule: "(BestTopMerged_pt>=600) && (BestTopMerged_pt<1000)"
 uncertainties:
   lumi:
     mode: "lnN"

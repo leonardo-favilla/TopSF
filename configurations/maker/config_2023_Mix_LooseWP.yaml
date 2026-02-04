@@ -2,9 +2,8 @@ year: 2023
 lumi: 18.063
 lumiunit: fb
 genweight: "xsecWeight/ntotEvents*nloewcorrection*puWeight*SFbtag*(LHEWeight_originalXWGTUP/abs(LHEWeight_originalXWGTUP))"
-# genweight: "1."
 treename: Events
-analysisname: Trota_TopSF_2023
+analysisname: Trota_TopSF_2023_Mixed_LooseWP
 processes:
   data:
     nominal_files:
@@ -384,7 +383,6 @@ processes:
           - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework_minimal/ZJetsToNuNu_2jets_PT400to600_2J_2023/ZJetsToNuNu_2jets_PT400to600_2J_2023_jerDown_0.root
           - davs://webdav.recas.ba.infn.it:8443/cms/store/user/lfavilla/TopSF/ntuples_ready_for_TopSF_Framework_minimal/ZJetsToNuNu_2jets_PT600_2J_2023/ZJetsToNuNu_2jets_PT600_2J_2023_jerDown_0.root
 basecut: "W_pt>150 && MET_pt>50"
-# basecut: "1."
 categories:
   topmatched:
     processes:
@@ -401,9 +399,9 @@ categories:
       - qcd
       - wjets
       - zjets
-    cut: "1.0"
+    cut: "!(TopMixedMatched_to_GenTop_dR0p2)"
 tagger:
-  name: BestTopMixed_TightWP
+  name: BestTopMixed_LooseWP
   varname: BestTopMixed_score
   cut: 0.7214655876159668
 distribution:
@@ -418,10 +416,8 @@ distribution:
       rule: "(BestTopMixed_pt>=200) && (BestTopMixed_pt<400)"
     - name: pt400to600
       rule: "(BestTopMixed_pt>=400) && (BestTopMixed_pt<600)"
-    - name: pt600to800
-      rule: "(BestTopMixed_pt>=600) && (BestTopMixed_pt<800)"
-    - name: pt800to1000
-      rule: "(BestTopMixed_pt>=800) && (BestTopMixed_pt<1000)"
+    - name: pt600to1000
+      rule: "(BestTopMixed_pt>=600) && (BestTopMixed_pt<1000)"
 uncertainties:
   lumi:
     mode: "lnN"

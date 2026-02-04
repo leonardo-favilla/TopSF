@@ -4,6 +4,15 @@ import numpy as np
 import ROOT as pyr
 import yaml
 import argparse
+import sys
+from datetime import datetime
+
+USE_COLOR   = sys.stdout.isatty()
+
+BLUE        = "\033[1;34m" if USE_COLOR else ""
+GREEN       = "\033[1;32m" if USE_COLOR else ""
+YELLOW      = "\033[1;33m" if USE_COLOR else ""
+RESET       = "\033[0m"    if USE_COLOR else ""
 
 PYROOT_DEFAULT_DIR = pyr.gDirectory.pwd()
 
@@ -80,18 +89,27 @@ def extract_histogram(filename, treename, var, cut, weight, histname, xbins, xmi
     fileobj = pyr.TFile.Open(filename)          # to read files both on local/eos and on tier
     treeobj = fileobj.Get(treename)
     hist = pyr.TH1F(histname, histname, xbins, xmin, xmax)
-    if args.debug: print(f"({cut})*({weight})")
-    project_out = treeobj.Project(histname, var, f"({cut})*({weight})", "e")
     if args.debug:
-        print(project_out)
-        print_histogram(hist)
+        # print(f"Extracting histo {histname} with ({cut})*({weight})")
+        print(
+                f"Extracting histo {BLUE}{histname}{RESET} "
+                f"with {GREEN}({cut})*({weight}){RESET} "
+                f"from file {YELLOW}{filename}{RESET}"
+            )
+    t0          = datetime.now()
+    project_out = treeobj.Project(histname, var, f"({cut})*({weight})", "e")
+    t1          = datetime.now()
+    if args.debug:
+        print("project_out:", project_out)
+        # print_histogram(hist)
+        print(f"Time taken: {t1-t0}")
     hist.SetDirectory(pyr.gROOT)
     fileobj.Close()
     return hist
 
 def combine_histograms(histlist, finalname, xbins, xmin, xmax):
     cachehist = pyr.TH1F(finalname, finalname, xbins, xmin, xmax)
-    if args.debug: print(histlist)
+    if args.debug: print("histlist:", histlist)
     for hist in histlist: cachehist.Add(hist)
     return cachehist
 
@@ -189,6 +207,7 @@ def extract_hist_dict(filelist, process, weight, mass_variable, mass_bins, mass_
                     histname=histname+"_fail",
                     xbins=mass_bins, xmin=mass_range[0], xmax=mass_range[1]
                 )
+        print("\n")
     return cache_dict
 
 if "perfileweights" in yaml_spec.keys():
@@ -243,22 +262,22 @@ for mass_variable, mass_bins, mass_range in mass_variables:
         weight_nominal = str(lumi_to_plot) + "*" + genweight_to_plot
         if "additional_weights" in yaml_spec["processes"][process].keys(): 
             weight_nominal += "*" + yaml_spec["processes"][process]["additional_weights"]
-        if args.debug: print(weight_nominal)
+        if args.debug: print("weight_nominal:", weight_nominal)
         hist_plots_per_processes_and_files[mass_variable][process]["nominal"] = extract_hist_dict(
             yaml_spec["processes"][process]["nominal_files"],
             process=process, weight=weight_nominal, 
             mass_variable=mass_variable, mass_bins=mass_bins, mass_range=mass_range
         )
-        if args.debug: print(hist_plots_per_processes_and_files[mass_variable][process]["nominal"])
-        
+        if args.debug: print("hist_plots_per_processes_and_files:", hist_plots_per_processes_and_files[mass_variable][process]["nominal"])
+
         for unc in unc_to_plot:
             if args.debug: print(f"Debug: unc = {unc}")
             if yaml_spec["uncertainties"][unc]["mode"] == "factor":
                 weight_uncup   = weight_nominal + "*" + yaml_spec["uncertainties"][unc]["up"]
                 weight_uncdown = weight_nominal + "*" + yaml_spec["uncertainties"][unc]["down"]
                 if args.debug: 
-                    print(weight_uncup)
-                    print(weight_uncdown)
+                    print("weight_uncup: ", weight_uncup)
+                    print("weight_uncdown: ", weight_uncdown)
                 hist_plots_per_processes_and_files[mass_variable][process][unc+"_up"] = extract_hist_dict(
                     yaml_spec["processes"][process]["nominal_files"],
                     process=process, weight=weight_uncup, uncname=unc+"_up",
@@ -397,8 +416,8 @@ for mass_variable, mass_bins, mass_range in mass_variables:
             for pt_range in hist_plots_per_category[category][unc].keys():
                 print(f"pT range: {pt_range}")
                 for passorfail in hist_plots_per_category[category][unc][pt_range].keys():
-                    print(passorfail)
-                    print(hist_plots_per_category[category][unc][pt_range][passorfail])
+                    print("passorfail: ", passorfail)
+                    print("hist_plots_per_category[category][unc][pt_range][passorfail]: ", hist_plots_per_category[category][unc][pt_range][passorfail])
 
     analysis_obj_collection = {}
     #for i, pt_range in enumerate(pt_ranges_to_plot):
@@ -441,9 +460,9 @@ for mass_variable, mass_bins, mass_range in mass_variables:
                     isUp=False, isPass=False
                 )
         analysis_obj_collection[event_catname] = analysis_hist_obj
-    if args.debug: print(analysis_obj_collection)
+    if args.debug: print("analysis_obj_collection:", analysis_obj_collection)
     for key in analysis_obj_collection.keys():
-        if args.debug: print(analysis_obj_collection[key].__dict__)
+        if args.debug: print("analysis_obj_collection[key].__dict__:", analysis_obj_collection[key].__dict__)
         analysis_obj_collection[key].save_histograms(f"{analysis_name}/{mass_variable}/{key}.root")
         
         number_of_categories = len(analysis_obj_collection[key].categories)

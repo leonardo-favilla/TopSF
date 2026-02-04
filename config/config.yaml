@@ -1,0 +1,15 @@
+make_file:
+  "2022":
+    "ResLoose": ""
+    "ResTight": ""
+    "MixLoose": ""
+    "MixTight": ""
+    "MerLoose": ""
+    "MerTight": ""
+  "2023":
+    "ResLoose": "configurations/maker/config_2023_Res_LooseWP.yaml"
+    "ResTight": ""
+    "MixLoose": "configurations/maker/config_2023_Mix_LooseWP.yaml"
+    "MixTight": ""
+    "MerLoose": "configurations/maker/config_2023_Mer_LooseWP.yaml"
+    "MerTight": ""

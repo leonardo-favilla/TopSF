@@ -1,0 +1,35 @@
+lumi: 18.063
+xlabel: "Best TopMixed Mass (GeV)"
+savedir: "Trota_TopSF_2023_Mixed_LooseWP"
+com: 13.6
+categories:
+  topmatched:
+    color: "#5790fc"
+    propername: "Top-matched"
+  nonmatched:
+    color: "#e42536"
+    propername: "Non-matched"
+  other:
+    color: "#964a8b"
+    propername: "Other"
+eventcats:
+  - name: pt0to200
+    variable: BestTopMixed_mass
+    propername: "$p_T \\in [0, 200]$"
+    prefitfile: Trota_TopSF_2023_Mixed_LooseWP/BestTopMixed_mass/pt0to200.root
+    postfitfile: Trota_TopSF_2023_Mixed_LooseWP/BestTopMixed_mass/fitDiagnostics_pt0to200.root
+  - name: pt200to400
+    variable: BestTopMixed_mass
+    propername: "$p_T \\in [200, 400]$"
+    prefitfile: Trota_TopSF_2023_Mixed_LooseWP/BestTopMixed_mass/pt200to400.root
+    postfitfile: Trota_TopSF_2023_Mixed_LooseWP/BestTopMixed_mass/fitDiagnostics_pt200to400.root
+  - name: pt400to600
+    variable: BestTopMixed_mass
+    propername: "$p_T \\in [400, 600]$"
+    prefitfile: Trota_TopSF_2023_Mixed_LooseWP/BestTopMixed_mass/pt400to600.root
+    postfitfile: Trota_TopSF_2023_Mixed_LooseWP/BestTopMixed_mass/fitDiagnostics_pt400to600.root
+  - name: pt600to1000
+    variable: BestTopMixed_mass
+    propername: "$p_T \\in [600, 1000]$"
+    prefitfile: Trota_TopSF_2023_Mixed_LooseWP/BestTopMixed_mass/pt600to1000.root
+    postfitfile: Trota_TopSF_2023_Mixed_LooseWP/BestTopMixed_mass/fitDiagnostics_pt600to1000.root
